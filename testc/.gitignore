@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/testc
+testc.so
+testc.dylib
+testc.dll
+libtestc.a
+testc.a
+testc.lib
+testc-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
