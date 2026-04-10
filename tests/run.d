@@ -1,0 +1,1 @@
+runDubTest("issue3070");
