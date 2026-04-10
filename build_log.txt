@@ -1,2 +1,0 @@
-    Starting Performing "debug" build using C:\D\dmd2\windows\bin64\dmd.exe for x86_64.
-    Building dub ~master: building configuration [application]
