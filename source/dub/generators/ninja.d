@@ -32,13 +32,14 @@ class NinjaGenerator : ProjectGenerator
         {
             foreach (src; info.buildSettings.sourceFiles)
             {
-                auto obj = baseName(stripExtension(src)) ~ ".o";
+                import std.array : replace;
+                auto obj = stripExtension(src).replace("/", "_").replace(":", "_") ~ ".o";
                 f.writeln("build ", obj, ": dc ", src);
             }
             f.writeln();
         }
-        foreach (name, info; targets)
-        f.writeln("default ", info.buildSettings.targetName);
+        //foreach (name, info; targets)
+        //f.writeln("default ", info.buildSettings.targetName);
         f.close();
     }
 }
